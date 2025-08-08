@@ -1,0 +1,21 @@
+<div class="bg-white rounded-md shadow-sm p-4">
+  <!-- Header -->
+  <ng-content class="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6" select="[card-header]">
+    <div class="min-w-0">
+      <ng-content select="[card-title]"></ng-content>
+      <ng-content select="[card-description]"></ng-content>
+    </div>
+    <div class="shrink-0">
+      <ng-content
+        select="[card-action]"
+        class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      ></ng-content>
+    </div>
+  </ng-content>
+
+  <!-- Body (default slot) -->
+  <ng-content class="px-6"></ng-content>
+
+  <!-- Footer -->
+  <ng-content select="[card-footer]" class="card-footer flex items-center px-6 [.border-t]:pt-6"></ng-content>
+</div>

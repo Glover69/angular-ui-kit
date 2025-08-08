@@ -1,0 +1,28 @@
+<button
+    type="button"
+    [disabled]="disabled || loading"
+    [ngClass]="[
+        'btn',
+        'btn-' + (size || 'md'),
+        'btn-' + (hierarchy || 'primary')
+    ]"
+    [class.btn-loading]="loading"
+    [class.btn-destructive]="isDestructive"
+    [class.flex-row-reverse]="icon === 'trailing'"
+>
+  @if (loading) {
+  <i class="ph ph-[circle-notch] animate-spin w-5 h-5"></i>
+  } @if (!loading && icon !== 'false') {
+  <i
+    class="w-5 h-5"
+    [ngClass]="[
+      'ph',
+      'ph-[' + iconName + (iconStyle ? '--' + iconStyle : '') + ']'
+    ]"
+  ></i>
+  }
+
+  @if(icon !== 'only'){
+    {{ text }}
+  }
+</button>

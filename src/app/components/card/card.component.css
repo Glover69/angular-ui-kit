@@ -1,0 +1,10 @@
+:host { display: block; }
+
+/* Hide header if no title/description/action projected */
+.card-header:not(:has([card-title],[card-description],[card-action])) { display: none; }
+/* Add spacing only when header exists */
+.card-header:has([card-title],[card-description],[card-action]) { margin-bottom: 1rem; }
+
+/* Hide footer if empty */
+.card-footer:empty { display: none; }
+
