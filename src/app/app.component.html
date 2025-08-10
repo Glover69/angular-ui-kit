@@ -1,20 +1,30 @@
-<section class="w-full h-full flex items-center justify-center p-6 bg-gray-50">
-  <app-card>
+<section class="w-full h-full flex items-center justify-center p-6">
+  <!-- <app-card>
 	<div card-header>
 	 <h3 card-title>Payment</h3>
      <p card-description>Add your payment method to continue.</p>
-     <button card-action class="btn btn-secondary focus-ring-primary-600">Manage</button>
 	</div>
 
 
-    <!-- body -->
     <div class="mt-2">
-      <!-- form/content here -->
     </div>
 
     <div card-footer class="flex justify-end gap-2">
-      <app-button [icon]="'false'" [iconName]="'circle-notch'" [iconStyle]="'duotone'" [text]="'Button CTA'" [size]="'lg'" [hierarchy]="'secondary'"></app-button>
-      <button class="btn btn-primary">Save</button>
+      <app-button [loading]="false" [icon]="'leading'" [iconName]="'circle-notch'" [iconStyle]="'duotone'" [text]="'Button CTA'" [size]="'lg'" [hierarchy]="'secondary'"></app-button>
     </div>
   </app-card>
+
+  <app-button-groups (buttonClick)="onGroupClick($event)" [buttons]="groupedButtons" [size]="'lg'" [hierarchy]="'tertiary-gray'" [label]="'Button Group'"></app-button-groups> -->
+
+  <app-input-field-base
+    [inputType]="'base'"
+    [baseInputType]="'leading-text'"
+    [leadingTextValue]="'https://'"
+    [trailingOptions]="countryOptions"
+    [hintText]="'This is a hint text'"
+    [isDestructive]="false"
+    [placeholder]="'olivia@untitledui.com'"
+    [label]="'Hello There'"
+    [disabled]="true"
+  ></app-input-field-base>
 </section>
