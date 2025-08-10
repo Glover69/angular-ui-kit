@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@plugin 'phosphor-icons-tailwindcss';
+
 
 html, body {
   font-family: var(--font-sans);
@@ -87,11 +87,6 @@ html, body {
   z-50 → always-on-top */
 
 }
-
-
-
-
-
 
 
 
@@ -205,7 +200,7 @@ html, body {
   /* State helpers */
   .btn-loading { @apply pointer-events-none opacity-60; }
 }
-/* ...existing code... */
+
 
 @layer components {
   [card-title] { @apply text-gray-900 font-semibold leading-none; }

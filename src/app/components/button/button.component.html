@@ -1,5 +1,8 @@
 <button
-    type="button"
+    [attr.type]="type"
+    [attr.name]="name || null"
+    [attr.value]="value || null" 
+    (click)="onClick($event)"
     [disabled]="disabled || loading"
     [ngClass]="[
         'btn',
@@ -11,13 +14,13 @@
     [class.flex-row-reverse]="icon === 'trailing'"
 >
   @if (loading) {
-  <i class="ph ph-[circle-notch] animate-spin w-5 h-5"></i>
+  <i class="ph ph-[circle-notch] animate-spin"></i>
   } @if (!loading && icon !== 'false') {
   <i
-    class="w-5 h-5"
+    class=""
     [ngClass]="[
-      'ph',
-      'ph-[' + iconName + (iconStyle ? '--' + iconStyle : '') + ']'
+      iconStyle && iconStyle !== 'regular' ? 'ph-' + iconStyle : 'ph',
+      iconName ? 'ph-' + iconName : ''
     ]"
   ></i>
   }
