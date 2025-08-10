@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 
 html, body {
@@ -40,6 +41,7 @@ html, body {
   /* Error color variants */
   --color-error-50: #FEF3F2;
   --color-error-100: #FEE4E2;
+  --color-error-300: #FDA29B;
   --color-error-500: #F04438;
   --color-error-700: #B42318;
 
@@ -57,7 +59,7 @@ html, body {
 
 
   /* FONTS */
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* SHADOWS */
@@ -119,6 +121,7 @@ html, body {
   /* Error color variants */
   --color-error-50: #FEF3F2;
   --color-error-100: #FEE4E2;
+  --color-error-300: #FDA29B;
   --color-error-500: #F04438;
   --color-error-700: #B42318;
 
@@ -193,7 +196,7 @@ html, body {
   }
 
   .btn-destructive {
-    @apply bg-error-500 text-white hover:bg-error-700 disabled:bg-error-100
+    @apply bg-error-300 text-white hover:bg-error-700 disabled:bg-error-100
            focus-visible:ring-error-100;
   }
 

@@ -5,21 +5,33 @@ import {
   ButtonGroupsComponent,
   ButtonProps,
 } from './components/button-groups/button-groups.component';
+import { InputFieldBaseComponent } from './components/input-field-base/input-field-base.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ButtonGroupsComponent, ButtonComponent, CardComponent],
+  imports: [
+    ButtonGroupsComponent,
+    ButtonComponent,
+    CardComponent,
+    InputFieldBaseComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'ui-kit';
 
+  countryOptions = [
+    { label: 'US', value: 'US' },
+    { label: 'GH', value: 'GH' },
+    { label: 'NG', value: 'NG' },
+  ];
+
   groupedButtons: ButtonProps[] = [
     {
       size: 'md',
       hierarchy: 'tertiary-gray',
-      icon: "leading",
+      icon: 'leading',
       isDestructive: false,
       text: 'Hello',
       iconName: 'acorn',
