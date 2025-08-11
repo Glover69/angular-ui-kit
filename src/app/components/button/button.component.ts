@@ -6,9 +6,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
-  host: {
-
-  }
 })
 export class ButtonComponent {
   @Input() size: 'sm' | 'md' | 'lg' | 'xl' | '2xl' = 'sm'
@@ -26,7 +23,7 @@ export class ButtonComponent {
   @Input() isInGroup?: boolean = false
 
 
-  @Output() clicked = new EventEmitter<MouseEvent>();       // NEW
+  @Output() clicked = new EventEmitter<MouseEvent>(); 
 
   onClick(event: MouseEvent) {
     if (!this.disabled && !this.loading) this.clicked.emit(event);

@@ -6,7 +6,7 @@
 
 html, body {
   font-family: var(--font-sans);
-  font-optical-sizing: auto; /* works with Inter variable font */
+  font-optical-sizing: auto;
 }
 
 @custom-variant dark (&:is(.dark *));
