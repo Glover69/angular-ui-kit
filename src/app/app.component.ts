@@ -7,6 +7,7 @@ import {
 } from './components/button-groups/button-groups.component';
 import { InputFieldBaseComponent } from './components/input-field-base/input-field-base.component';
 import { DatePickerComponent } from "./components/date-picker/date-picker.component";
+import { TimePickerComponent } from "./components/time-picker/time-picker.component";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { DatePickerComponent } from "./components/date-picker/date-picker.compon
     ButtonComponent,
     CardComponent,
     InputFieldBaseComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    TimePickerComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

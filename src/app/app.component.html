@@ -15,7 +15,7 @@
   </app-card>
 
   <app-button-groups (buttonClick)="onGroupClick($event)" [buttons]="groupedButtons" [size]="'lg'" [hierarchy]="'tertiary-gray'" [label]="'Button Group'"></app-button-groups> -->
-
+<!-- 
   <app-input-field-base
     [inputType]="'base'"
     [baseInputType]="'leading-text'"
@@ -34,5 +34,12 @@
                formControlName="start_date"
                [required]="true"
                class="w-full">
-             </app-date-picker>
+             </app-date-picker> -->
+
+             <app-time-picker
+                          label="Start Time"
+                          formControlName="start_time"
+                          placeholder_two="Start at"
+                          [required]="true">
+                        </app-time-picker>
 </section>
