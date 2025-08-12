@@ -108,7 +108,7 @@
     <!-- Footer -->
     <div class="flex w-full gap-3 p-4 border-t border-gray-300 flex-shrink-0">
       <app-button class="w-full" text="Cancel" [type]="'button'" hierarchy="secondary" (clicked)="closeTimePicker()"></app-button>
-      <app-button class="w-full" text="Done" [type]="'button'" hierarchy="primary" (clicked)="closeTimePicker()"></app-button>
+      <app-button class="w-full" text="Done" [type]="'button'" hierarchy="primary" (clicked)="confirmSelection()"></app-button>
     </div>
   </div>
 }
