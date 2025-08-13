@@ -9,6 +9,7 @@ import { InputFieldBaseComponent } from './components/input-field-base/input-fie
 import { DatePickerComponent } from "./components/date-picker/date-picker.component";
 import { TimePickerComponent } from "./components/time-picker/time-picker.component";
 import { DrawerComponent } from "./components/drawer/drawer.component";
+import { SheetComponent } from "./components/sheet/sheet.component";
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { DrawerComponent } from "./components/drawer/drawer.component";
     InputFieldBaseComponent,
     DatePickerComponent,
     TimePickerComponent,
-    DrawerComponent
+    DrawerComponent,
+    SheetComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -69,7 +71,7 @@ export class AppComponent {
       loading: false,
     },
   ];
-drawerOpen: any;
+sheetOpen: any;
 
   onGroupClick(e: { index: number; item: ButtonProps; event: MouseEvent }) {
     console.log('clicked', e.index, e.item?.id);
