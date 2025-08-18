@@ -10,6 +10,7 @@ import { DatePickerComponent } from "./components/date-picker/date-picker.compon
 import { TimePickerComponent } from "./components/time-picker/time-picker.component";
 import { DrawerComponent } from "./components/drawer/drawer.component";
 import { SheetComponent } from "./components/sheet/sheet.component";
+import { DialogComponent } from "./components/dialog/dialog.component";
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { SheetComponent } from "./components/sheet/sheet.component";
     DatePickerComponent,
     TimePickerComponent,
     DrawerComponent,
-    SheetComponent
+    SheetComponent,
+    DialogComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
